@@ -1,0 +1,86 @@
+body {
+    background-image: url("img/provaSfondo.webp");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+h1 {
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.67);
+    font-size: 3.4rem;
+}
+#header-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -0.5rem;
+}
+
+#logo {
+    width: 80px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+#contenitore {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Allinea il contenuto del form a sinistra */
+    padding: 2rem;
+    width: 20rem;
+    aspect-ratio: 4 / 3; /* Mantieni il contenitore rettangolare */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+#contenitore form label {
+    margin-bottom: 0.5rem;
+    margin-left: 0.2rem;
+    font-weight: bold;
+    text-align: left;
+}
+input {
+    width: 18rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 0.2rem;
+}
+
+input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 4px #007BFF;
+}
+form {
+    width: 100%;
+}
+button {
+    width: 15rem;
+    padding: 0.7rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#contenitore form button {
+    display: block;
+    margin: 0 auto;
+}
+button:hover {
+    background-color: #0056b3;
+}
+button:disabled {
+    background-color: #ccd3d6;
+    color: #ffffff;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
